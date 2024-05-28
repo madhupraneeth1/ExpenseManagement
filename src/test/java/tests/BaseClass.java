@@ -27,7 +27,7 @@ public class BaseClass extends ExtentReportsXM {
 		
 		DesiredCapabilities caps = new DesiredCapabilities();
 		
-		caps.setCapability("deviceName", "Oneplus 7T");
+		caps.setCapability("deviceName", "Oneplus 778");
 		caps.setCapability("udid", "7fac1e5a");
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("platformVersion", "11");
