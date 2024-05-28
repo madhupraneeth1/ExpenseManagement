@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-26T18:06:28 IST" name="Suite" finished-at="2024-04-26T18:07:49 IST" duration-ms="81308">
+    <groups>
+    </groups>
+    <test started-at="2024-04-26T18:06:28 IST" name="BStackDemo 1" finished-at="2024-04-26T18:07:03 IST" duration-ms="35816">
+      <class name="tests.ExpenseReport">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ExpenseReport@77888435]" started-at="2024-04-26T18:06:28 IST" name="setup" finished-at="2024-04-26T18:07:01 IST" duration-ms="33543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.ExpenseReport@77888435]" started-at="2024-04-26T18:07:01 IST" name="dotest" finished-at="2024-04-26T18:07:01 IST" duration-ms="7" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String, String)" because "this.extent" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String, String)" because "this.extent" is null
+at tests.ExpenseReport.dotest(ExpenseReport.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ExpenseReport@77888435]" started-at="2024-04-26T18:07:01 IST" name="teardown" finished-at="2024-04-26T18:07:03 IST" duration-ms="2199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.ExpenseReport -->
+    </test> <!-- BStackDemo 1 -->
+    <test started-at="2024-04-26T18:07:04 IST" name="BStackDemo 2" finished-at="2024-04-26T18:07:49 IST" duration-ms="45444">
+      <class name="tests.Xm3913">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:tests.Xm3913@5542c4ed]" started-at="2024-04-26T18:06:27 IST" name="reportSetup" finished-at="2024-04-26T18:06:28 IST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportSetup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Xm3913@5542c4ed]" started-at="2024-04-26T18:07:04 IST" name="setup" finished-at="2024-04-26T18:07:36 IST" duration-ms="32101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.Xm3913@5542c4ed]" started-at="2024-04-26T18:07:36 IST" name="dotest" finished-at="2024-04-26T18:07:49 IST" duration-ms="13329" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [38be2815-14fd-461b-b213-a5fa28fe6efd, findElement {using=xpath, value=//android.widget.TextView[@resource-id="com.infor.hl.xm.dev:id/field_option" and @text="Business Development"]
+}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 38be2815-14fd-461b-b213-a5fa28fe6efd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [38be2815-14fd-461b-b213-a5fa28fe6efd, findElement {using=xpath, value=//android.widget.TextView[@resource-id="com.infor.hl.xm.dev:id/field_option" and @text="Business Development"]
+}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 38be2815-14fd-461b-b213-a5fa28fe6efd
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at tests.Xm3913.dotest(Xm3913.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.Xm3913@5542c4ed]" started-at="2024-04-26T18:07:49 IST" name="teardown" finished-at="2024-04-26T18:07:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="reportTeardown()[pri:0, instance:tests.Xm3913@5542c4ed]" started-at="2024-04-26T18:07:49 IST" name="reportTeardown" finished-at="2024-04-26T18:07:50 IST" duration-ms="1302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTeardown -->
+      </class> <!-- tests.Xm3913 -->
+    </test> <!-- BStackDemo 2 -->
+  </suite> <!-- Suite -->
+</testng-results>
