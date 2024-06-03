@@ -27,7 +27,7 @@ public class BaseClass extends ExtentReportsXM {
 		
 		DesiredCapabilities caps = new DesiredCapabilities();
 		
-		caps.setCapability("deviceName", "Oneplus Nord22");
+		caps.setCapability("deviceName", "Oneplus 7T");
 		caps.setCapability("udid", "7fac1e5a");
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("platformVersion", "11");
@@ -79,6 +79,8 @@ public class BaseClass extends ExtentReportsXM {
 			WebElement skip = driver.findElement(By.id("com.infor.hl.xm.dev:id/product_tour_skip_button"));
 			skip.click();
 			
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.infor.hl.xm.dev:id/user_profile_img")));
+			
 		} catch (Exception e) {
 			System.out.println("cause is :"+e.getCause());
 			System.out.println("Message is :"+e.getMessage());
@@ -89,7 +91,7 @@ public class BaseClass extends ExtentReportsXM {
 	
 	@AfterTest
 	public void teardown() {
-		
+		driver.quit();	
 		
 	}
 }

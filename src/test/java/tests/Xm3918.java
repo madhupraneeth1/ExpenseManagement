@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-public class Xm3918 extends BaseClass {
+public class XM3918 extends BaseClass {
 	@Test 
 	
 	public void dotest() throws Exception {

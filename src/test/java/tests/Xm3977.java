@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
 
-public class Xm3977 extends BaseClass {
+public class XM3977 extends BaseClass {
 @Test
 	public void dotest() throws Exception {
 		Thread.sleep(3000);
