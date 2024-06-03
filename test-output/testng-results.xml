@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="20" passed="0" failed="20" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-26T18:06:28 IST" name="Suite" finished-at="2024-04-26T18:07:49 IST" duration-ms="81308">
+  <suite started-at="2024-06-02T18:32:47 IST" name="Demo Suite" finished-at="2024-06-02T19:06:26 IST" duration-ms="2019125">
     <groups>
     </groups>
-    <test started-at="2024-04-26T18:06:28 IST" name="BStackDemo 1" finished-at="2024-04-26T18:07:03 IST" duration-ms="35816">
-      <class name="tests.ExpenseReport">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ExpenseReport@77888435]" started-at="2024-04-26T18:06:28 IST" name="setup" finished-at="2024-04-26T18:07:01 IST" duration-ms="33543" status="PASS">
+    <test started-at="2024-06-02T18:32:47 IST" name="A1" finished-at="2024-06-02T18:34:09 IST" duration-ms="81847">
+      <class name="tests.XM3913">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3913@77888435]" started-at="2024-06-02T18:32:47 IST" name="setup" finished-at="2024-06-02T18:33:05 IST" duration-ms="17506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dotest()[pri:0, instance:tests.ExpenseReport@77888435]" started-at="2024-04-26T18:07:01 IST" name="dotest" finished-at="2024-04-26T18:07:01 IST" duration-ms="7" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="dotest()[pri:0, instance:tests.XM3913@77888435]" started-at="2024-06-02T18:33:05 IST" name="dotest" finished-at="2024-06-02T18:34:08 IST" duration-ms="63222" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String, String)" because "this.extent" is null]]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c5cd3ba5-149c-4236-9400-d6f4224d6662]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String, String)" because "this.extent" is null
-at tests.ExpenseReport.dotest(ExpenseReport.java:20)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c5cd3ba5-149c-4236-9400-d6f4224d6662
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at tests.XM3913.dotest(XM3913.java:18)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -47,27 +59,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dotest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ExpenseReport@77888435]" started-at="2024-04-26T18:07:01 IST" name="teardown" finished-at="2024-04-26T18:07:03 IST" duration-ms="2199" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3913@77888435]" started-at="2024-06-02T18:34:08 IST" name="teardown" finished-at="2024-06-02T18:34:09 IST" duration-ms="1025" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- tests.ExpenseReport -->
-    </test> <!-- BStackDemo 1 -->
-    <test started-at="2024-04-26T18:07:04 IST" name="BStackDemo 2" finished-at="2024-04-26T18:07:49 IST" duration-ms="45444">
-      <class name="tests.Xm3913">
-        <test-method is-config="true" signature="reportSetup()[pri:0, instance:tests.Xm3913@5542c4ed]" started-at="2024-04-26T18:06:27 IST" name="reportSetup" finished-at="2024-04-26T18:06:28 IST" duration-ms="156" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportSetup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Xm3913@5542c4ed]" started-at="2024-04-26T18:07:04 IST" name="setup" finished-at="2024-04-26T18:07:36 IST" duration-ms="32101" status="PASS">
+      </class> <!-- tests.XM3913 -->
+    </test> <!-- A1 -->
+    <test started-at="2024-06-02T18:34:09 IST" name="A2" finished-at="2024-06-02T18:37:28 IST" duration-ms="199367">
+      <class name="tests.XM3914">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3914@3fc2959f]" started-at="2024-06-02T18:34:09 IST" name="setup" finished-at="2024-06-02T18:34:50 IST" duration-ms="41144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dotest()[pri:0, instance:tests.Xm3913@5542c4ed]" started-at="2024-04-26T18:07:36 IST" name="dotest" finished-at="2024-04-26T18:07:49 IST" duration-ms="13329" status="FAIL">
+        <test-method signature="dotest()[pri:0, instance:tests.XM3914@3fc2959f]" started-at="2024-06-02T18:34:50 IST" name="dotest" finished-at="2024-06-02T18:37:26 IST" duration-ms="156231" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
@@ -75,10 +83,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: io.appium.java_client.AppiumDriver
-Command: [38be2815-14fd-461b-b213-a5fa28fe6efd, findElement {using=xpath, value=//android.widget.TextView[@resource-id="com.infor.hl.xm.dev:id/field_option" and @text="Business Development"]
-}]
+Command: [ab7603bc-f90c-4200-b916-962add483ce9, findElement {using=id, value=com.infor.hl.xm.dev:id/approve_icon}]
 Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 38be2815-14fd-461b-b213-a5fa28fe6efd]]>
+Session ID: ab7603bc-f90c-4200-b916-962add483ce9]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
@@ -86,10 +93,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: io.appium.java_client.AppiumDriver
-Command: [38be2815-14fd-461b-b213-a5fa28fe6efd, findElement {using=xpath, value=//android.widget.TextView[@resource-id="com.infor.hl.xm.dev:id/field_option" and @text="Business Development"]
-}]
+Command: [ab7603bc-f90c-4200-b916-962add483ce9, findElement {using=id, value=com.infor.hl.xm.dev:id/approve_icon}]
 Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 38be2815-14fd-461b-b213-a5fa28fe6efd
+Session ID: ab7603bc-f90c-4200-b916-962add483ce9
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -103,7 +109,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at tests.Xm3913.dotest(Xm3913.java:26)
+at tests.XM3914.dotest(XM3914.java:185)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -136,15 +142,1293 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dotest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.Xm3913@5542c4ed]" started-at="2024-04-26T18:07:49 IST" name="teardown" finished-at="2024-04-26T18:07:49 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3914@3fc2959f]" started-at="2024-06-02T18:37:26 IST" name="teardown" finished-at="2024-06-02T18:37:28 IST" duration-ms="1982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="reportTeardown()[pri:0, instance:tests.Xm3913@5542c4ed]" started-at="2024-04-26T18:07:49 IST" name="reportTeardown" finished-at="2024-04-26T18:07:50 IST" duration-ms="1302" status="PASS">
+      </class> <!-- tests.XM3914 -->
+    </test> <!-- A2 -->
+    <test started-at="2024-06-02T18:37:28 IST" name="A3" finished-at="2024-06-02T18:38:09 IST" duration-ms="40261">
+      <class name="tests.XM3915">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3915@385c9627]" started-at="2024-06-02T18:37:28 IST" name="setup" finished-at="2024-06-02T18:38:08 IST" duration-ms="39064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3915@385c9627]" started-at="2024-06-02T18:38:08 IST" name="dotest" finished-at="2024-06-02T18:38:08 IST" duration-ms="149" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [da8902d7-9c17-40fc-b43d-f5f673d9232d, findElement {using=id, value=com.infor.hl.xm.dev:id/product_tour_take_button}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: da8902d7-9c17-40fc-b43d-f5f673d9232d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [da8902d7-9c17-40fc-b43d-f5f673d9232d, findElement {using=id, value=com.infor.hl.xm.dev:id/product_tour_take_button}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: da8902d7-9c17-40fc-b43d-f5f673d9232d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at tests.XM3915.dotest(XM3915.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3915@385c9627]" started-at="2024-06-02T18:38:08 IST" name="teardown" finished-at="2024-06-02T18:38:09 IST" duration-ms="1040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3915 -->
+    </test> <!-- A3 -->
+    <test started-at="2024-06-02T18:38:09 IST" name="A4" finished-at="2024-06-02T18:39:30 IST" duration-ms="80719">
+      <class name="tests.XM3917">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3917@229f66ed]" started-at="2024-06-02T18:38:09 IST" name="setup" finished-at="2024-06-02T18:38:24 IST" duration-ms="15653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3917@229f66ed]" started-at="2024-06-02T18:38:24 IST" name="dotest" finished-at="2024-06-02T18:39:28 IST" duration-ms="63523" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 17f73b2c-8a17-41c4-86e8-453ff9406b29]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 17f73b2c-8a17-41c4-86e8-453ff9406b29
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at tests.XM3917.dotest(XM3917.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3917@229f66ed]" started-at="2024-06-02T18:39:28 IST" name="teardown" finished-at="2024-06-02T18:39:30 IST" duration-ms="1533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3917 -->
+    </test> <!-- A4 -->
+    <test started-at="2024-06-02T18:39:30 IST" name="A5" finished-at="2024-06-02T18:40:50 IST" duration-ms="80148">
+      <class name="tests.XM3918">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3918@477b4cdf]" started-at="2024-06-02T18:39:30 IST" name="setup" finished-at="2024-06-02T18:39:45 IST" duration-ms="15689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3918@477b4cdf]" started-at="2024-06-02T18:39:45 IST" name="dotest" finished-at="2024-06-02T18:40:49 IST" duration-ms="63389" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d1d336a4-9b72-4258-96fd-104aff6b4f95]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d1d336a4-9b72-4258-96fd-104aff6b4f95
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at tests.XM3918.dotest(XM3918.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3918@477b4cdf]" started-at="2024-06-02T18:40:49 IST" name="teardown" finished-at="2024-06-02T18:40:50 IST" duration-ms="1042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3918 -->
+    </test> <!-- A5 -->
+    <test started-at="2024-06-02T18:40:50 IST" name="A6" finished-at="2024-06-02T18:42:07 IST" duration-ms="76846">
+      <class name="tests.XM3920">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3920@5bda8e08]" started-at="2024-06-02T18:40:50 IST" name="setup" finished-at="2024-06-02T18:41:28 IST" duration-ms="37940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3920@5bda8e08]" started-at="2024-06-02T18:41:28 IST" name="dotest" finished-at="2024-06-02T18:42:05 IST" duration-ms="37787" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [6efb49e5-d822-4f8f-ab8a-a63695a6c306, findElement {using=id, value=com.infor.hl.xm.dev:id/currency_button}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6efb49e5-d822-4f8f-ab8a-a63695a6c306]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [6efb49e5-d822-4f8f-ab8a-a63695a6c306, findElement {using=id, value=com.infor.hl.xm.dev:id/currency_button}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6efb49e5-d822-4f8f-ab8a-a63695a6c306
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at tests.XM3920.dotest(XM3920.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3920@5bda8e08]" started-at="2024-06-02T18:42:05 IST" name="teardown" finished-at="2024-06-02T18:42:07 IST" duration-ms="1083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3920 -->
+    </test> <!-- A6 -->
+    <test started-at="2024-06-02T18:42:07 IST" name="A7" finished-at="2024-06-02T18:44:45 IST" duration-ms="158126">
+      <class name="tests.XM3922">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3922@179ece50]" started-at="2024-06-02T18:42:07 IST" name="setup" finished-at="2024-06-02T18:42:41 IST" duration-ms="34312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3922@179ece50]" started-at="2024-06-02T18:42:41 IST" name="dotest" finished-at="2024-06-02T18:44:44 IST" duration-ms="123158" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/product_tour_skip_button (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7f9a26c0-bd70-4040-9cca-dced91635b30]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/product_tour_skip_button (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7f9a26c0-bd70-4040-9cca-dced91635b30
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at tests.XM3922.dotest(XM3922.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3922@179ece50]" started-at="2024-06-02T18:44:44 IST" name="teardown" finished-at="2024-06-02T18:44:45 IST" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3922 -->
+    </test> <!-- A7 -->
+    <test started-at="2024-06-02T18:44:45 IST" name="A8" finished-at="2024-06-02T18:45:56 IST" duration-ms="70897">
+      <class name="tests.XM3925">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3925@4116aac9]" started-at="2024-06-02T18:44:45 IST" name="setup" finished-at="2024-06-02T18:45:20 IST" duration-ms="35449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3925@4116aac9]" started-at="2024-06-02T18:45:20 IST" name="dotest" finished-at="2024-06-02T18:45:55 IST" duration-ms="34778" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [6422cded-4437-4355-a3fc-c6283f3d8774, findElement {using=xpath, value=//*[contains(@text, 'Hotel')]}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6422cded-4437-4355-a3fc-c6283f3d8774]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [6422cded-4437-4355-a3fc-c6283f3d8774, findElement {using=xpath, value=//*[contains(@text, 'Hotel')]}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6422cded-4437-4355-a3fc-c6283f3d8774
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at tests.XM3925.dotest(XM3925.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3925@4116aac9]" started-at="2024-06-02T18:45:55 IST" name="teardown" finished-at="2024-06-02T18:45:56 IST" duration-ms="666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3925 -->
+    </test> <!-- A8 -->
+    <test started-at="2024-06-02T18:45:56 IST" name="A9" finished-at="2024-06-02T18:46:58 IST" duration-ms="62508">
+      <class name="tests.XM3926">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3926@15de0b3c]" started-at="2024-06-02T18:45:56 IST" name="setup" finished-at="2024-06-02T18:46:26 IST" duration-ms="30809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3926@15de0b3c]" started-at="2024-06-02T18:46:26 IST" name="dotest" finished-at="2024-06-02T18:46:57 IST" duration-ms="30981" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [d0c642a2-5567-4def-a634-e05506c14202, findElement {using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[11]/android.widget.TextView[2]}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d0c642a2-5567-4def-a634-e05506c14202]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [d0c642a2-5567-4def-a634-e05506c14202, findElement {using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[11]/android.widget.TextView[2]}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d0c642a2-5567-4def-a634-e05506c14202
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at tests.XM3926.dotest(XM3926.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3926@15de0b3c]" started-at="2024-06-02T18:46:57 IST" name="teardown" finished-at="2024-06-02T18:46:58 IST" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3926 -->
+    </test> <!-- A9 -->
+    <test started-at="2024-06-02T18:46:58 IST" name="A10" finished-at="2024-06-02T18:48:16 IST" duration-ms="77864">
+      <class name="tests.XM3927">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3927@3c9754d8]" started-at="2024-06-02T18:46:58 IST" name="setup" finished-at="2024-06-02T18:47:12 IST" duration-ms="13733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3927@3c9754d8]" started-at="2024-06-02T18:47:12 IST" name="dotest" finished-at="2024-06-02T18:48:15 IST" duration-ms="63345" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d5f69908-df74-4947-864c-b2b52323afec]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d5f69908-df74-4947-864c-b2b52323afec
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at tests.XM3927.dotest(XM3927.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3927@3c9754d8]" started-at="2024-06-02T18:48:15 IST" name="teardown" finished-at="2024-06-02T18:48:16 IST" duration-ms="784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3927 -->
+    </test> <!-- A10 -->
+    <test started-at="2024-06-02T18:48:16 IST" name="A11" finished-at="2024-06-02T18:49:42 IST" duration-ms="86056">
+      <class name="tests.XM3938">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3938@bcec361]" started-at="2024-06-02T18:48:16 IST" name="setup" finished-at="2024-06-02T18:48:53 IST" duration-ms="36564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test()[pri:0, instance:tests.XM3938@bcec361]" started-at="2024-06-02T18:48:53 IST" name="Test" finished-at="2024-06-02T18:49:41 IST" duration-ms="48728" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element 'By.id: com.infor.hl.xm.dev:id/add_tv' is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [87059ae7-0d01-4719-8b5b-20574b2a9a95, clickElement {id=00000000-0000-0113-ffff-ffff00000738}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AppiumDriver:  on ANDROID (87059ae7-0d01-4719-8b5b-20574b2a9a95)] -> id: com.infor.hl.xm.dev:id/add_tv]
+Session ID: 87059ae7-0d01-4719-8b5b-20574b2a9a95]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element 'By.id: com.infor.hl.xm.dev:id/add_tv' is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [87059ae7-0d01-4719-8b5b-20574b2a9a95, clickElement {id=00000000-0000-0113-ffff-ffff00000738}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AppiumDriver:  on ANDROID (87059ae7-0d01-4719-8b5b-20574b2a9a95)] -> id: com.infor.hl.xm.dev:id/add_tv]
+Session ID: 87059ae7-0d01-4719-8b5b-20574b2a9a95
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at tests.XM3938.Test(XM3938.java:98)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3938@bcec361]" started-at="2024-06-02T18:49:41 IST" name="teardown" finished-at="2024-06-02T18:49:42 IST" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3938 -->
+    </test> <!-- A11 -->
+    <test started-at="2024-06-02T18:49:42 IST" name="A12" finished-at="2024-06-02T18:51:00 IST" duration-ms="78211">
+      <class name="tests.XM3940">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3940@2cd76f31]" started-at="2024-06-02T18:49:42 IST" name="setup" finished-at="2024-06-02T18:49:56 IST" duration-ms="14149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3940@2cd76f31]" started-at="2024-06-02T18:49:56 IST" name="dotest" finished-at="2024-06-02T18:51:00 IST" duration-ms="63299" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 1cb24c08-cae3-4522-8738-42b3020de28a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 1cb24c08-cae3-4522-8738-42b3020de28a
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at tests.XM3940.dotest(XM3940.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3940@2cd76f31]" started-at="2024-06-02T18:51:00 IST" name="teardown" finished-at="2024-06-02T18:51:00 IST" duration-ms="748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3940 -->
+    </test> <!-- A12 -->
+    <test started-at="2024-06-02T18:51:00 IST" name="A13" finished-at="2024-06-02T18:53:09 IST" duration-ms="128287">
+      <class name="tests.XM3942">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3942@55fe41ea]" started-at="2024-06-02T18:51:00 IST" name="setup" finished-at="2024-06-02T18:52:40 IST" duration-ms="99461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3942@55fe41ea]" started-at="2024-06-02T18:52:40 IST" name="dotest" finished-at="2024-06-02T18:53:08 IST" duration-ms="28028" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [0b3d42de-a910-4e65-8477-c4ff1c9e55ef, findElement {using=id, value=com.infor.hl.xm.dev:id/report_name}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 0b3d42de-a910-4e65-8477-c4ff1c9e55ef]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [0b3d42de-a910-4e65-8477-c4ff1c9e55ef, findElement {using=id, value=com.infor.hl.xm.dev:id/report_name}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 0b3d42de-a910-4e65-8477-c4ff1c9e55ef
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at tests.XM3942.dotest(XM3942.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3942@55fe41ea]" started-at="2024-06-02T18:53:08 IST" name="teardown" finished-at="2024-06-02T18:53:09 IST" duration-ms="797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3942 -->
+    </test> <!-- A13 -->
+    <test started-at="2024-06-02T18:53:09 IST" name="A14" finished-at="2024-06-02T18:54:27 IST" duration-ms="78748">
+      <class name="tests.XM3949">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3949@24269709]" started-at="2024-06-02T18:53:09 IST" name="setup" finished-at="2024-06-02T18:53:23 IST" duration-ms="14788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3949@24269709]" started-at="2024-06-02T18:53:23 IST" name="dotest" finished-at="2024-06-02T18:54:27 IST" duration-ms="63110" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2ad7c3d6-7025-47c7-afa1-c68d0251bab3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2ad7c3d6-7025-47c7-afa1-c68d0251bab3
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at tests.XM3949.dotest(XM3949.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3949@24269709]" started-at="2024-06-02T18:54:27 IST" name="teardown" finished-at="2024-06-02T18:54:27 IST" duration-ms="834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3949 -->
+    </test> <!-- A14 -->
+    <test started-at="2024-06-02T18:54:27 IST" name="A15" finished-at="2024-06-02T18:55:55 IST" duration-ms="87822">
+      <class name="tests.XM3951">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3951@1ff4931d]" started-at="2024-06-02T18:54:27 IST" name="setup" finished-at="2024-06-02T18:55:04 IST" duration-ms="36185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3951@1ff4931d]" started-at="2024-06-02T18:55:04 IST" name="dotest" finished-at="2024-06-02T18:55:54 IST" duration-ms="50914" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [1789c417-5ee3-4de0-83a2-5a2191503766, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches("Test Train Company").instance(0))}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 1789c417-5ee3-4de0-83a2-5a2191503766]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [1789c417-5ee3-4de0-83a2-5a2191503766, findElement {using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches("Test Train Company").instance(0))}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 1789c417-5ee3-4de0-83a2-5a2191503766
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at tests.XM3951.dotest(XM3951.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3951@1ff4931d]" started-at="2024-06-02T18:55:54 IST" name="teardown" finished-at="2024-06-02T18:55:55 IST" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3951 -->
+    </test> <!-- A15 -->
+    <test started-at="2024-06-02T18:55:55 IST" name="A16" finished-at="2024-06-02T18:56:39 IST" duration-ms="43506">
+      <class name="tests.XM3977">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3977@7817fd62]" started-at="2024-06-02T18:55:55 IST" name="setup" finished-at="2024-06-02T18:56:26 IST" duration-ms="31042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3977@7817fd62]" started-at="2024-06-02T18:56:26 IST" name="dotest" finished-at="2024-06-02T18:56:38 IST" duration-ms="11867" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [f6632260-f4e7-4887-a4c9-b880aa7d5e37, findElement {using=xpath, value=//android.widget.TextView[@resource-id="com.infor.hl.xm.dev:id/field_option" and @text="Business Development"]
+}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f6632260-f4e7-4887-a4c9-b880aa7d5e37]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [f6632260-f4e7-4887-a4c9-b880aa7d5e37, findElement {using=xpath, value=//android.widget.TextView[@resource-id="com.infor.hl.xm.dev:id/field_option" and @text="Business Development"]
+}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f6632260-f4e7-4887-a4c9-b880aa7d5e37
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at tests.XM3977.dotest(XM3977.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3977@7817fd62]" started-at="2024-06-02T18:56:38 IST" name="teardown" finished-at="2024-06-02T18:56:39 IST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3977 -->
+    </test> <!-- A16 -->
+    <test started-at="2024-06-02T18:56:39 IST" name="A17" finished-at="2024-06-02T18:58:53 IST" duration-ms="134159">
+      <class name="tests.XM4193">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM4193@fa4c865]" started-at="2024-06-02T18:56:39 IST" name="setup" finished-at="2024-06-02T18:56:52 IST" duration-ms="13116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM4193@fa4c865]" started-at="2024-06-02T18:56:52 IST" name="dotest" finished-at="2024-06-02T18:58:52 IST" duration-ms="120497" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/product_tour_skip_button (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 45e7b3dd-601f-42a2-83c6-496c99beea79]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/product_tour_skip_button (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 45e7b3dd-601f-42a2-83c6-496c99beea79
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at tests.XM4193.dotest(XM4193.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM4193@fa4c865]" started-at="2024-06-02T18:58:52 IST" name="teardown" finished-at="2024-06-02T18:58:53 IST" duration-ms="545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM4193 -->
+    </test> <!-- A17 -->
+    <test started-at="2024-06-02T18:58:53 IST" name="A18" finished-at="2024-06-02T19:01:11 IST" duration-ms="137718">
+      <class name="tests.XM4233">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM4233@5e5d171f]" started-at="2024-06-02T18:58:53 IST" name="setup" finished-at="2024-06-02T18:59:10 IST" duration-ms="16924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM4233@5e5d171f]" started-at="2024-06-02T18:59:10 IST" name="dotest" finished-at="2024-06-02T19:01:10 IST" duration-ms="120027" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/product_tour_skip_button (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d169ba34-86d6-48cc-af51-562aba69192d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/product_tour_skip_button (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d169ba34-86d6-48cc-af51-562aba69192d
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at tests.XM4233.dotest(XM4233.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM4233@5e5d171f]" started-at="2024-06-02T19:01:10 IST" name="teardown" finished-at="2024-06-02T19:01:11 IST" duration-ms="765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM4233 -->
+    </test> <!-- A18 -->
+    <test started-at="2024-06-02T19:01:11 IST" name="A19" finished-at="2024-06-02T19:03:49 IST" duration-ms="158732">
+      <class name="tests.XM4281">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM4281@131ef10]" started-at="2024-06-02T19:01:11 IST" name="setup" finished-at="2024-06-02T19:01:48 IST" duration-ms="37609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM4281@131ef10]" started-at="2024-06-02T19:01:48 IST" name="dotest" finished-at="2024-06-02T19:03:49 IST" duration-ms="120472" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/product_tour_skip_button (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6295d086-a6ce-4524-ace8-5611217d8624]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/product_tour_skip_button (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6295d086-a6ce-4524-ace8-5611217d8624
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at tests.XM4281.dotest(XM4281.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM4281@131ef10]" started-at="2024-06-02T19:03:49 IST" name="teardown" finished-at="2024-06-02T19:03:49 IST" duration-ms="647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM4281 -->
+    </test> <!-- A19 -->
+    <test started-at="2024-06-02T19:03:49 IST" name="A20" finished-at="2024-06-02T19:06:26 IST" duration-ms="156908">
+      <class name="tests.XM4305">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:tests.XM4305@37ceb1df]" started-at="2024-06-02T18:32:47 IST" name="reportSetup" finished-at="2024-06-02T18:32:47 IST" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportSetup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM4305@37ceb1df]" started-at="2024-06-02T19:03:49 IST" name="setup" finished-at="2024-06-02T19:04:26 IST" duration-ms="36158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM4305@37ceb1df]" started-at="2024-06-02T19:04:26 IST" name="dotest" finished-at="2024-06-02T19:06:26 IST" duration-ms="120046" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/product_tour_skip_button (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7604bdc4-6af0-4b04-9e30-3d023d1cbd0a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/product_tour_skip_button (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7604bdc4-6af0-4b04-9e30-3d023d1cbd0a
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at tests.XM4305.dotest(XM4305.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM4305@37ceb1df]" started-at="2024-06-02T19:06:26 IST" name="teardown" finished-at="2024-06-02T19:06:26 IST" duration-ms="701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="reportTeardown()[pri:0, instance:tests.XM4305@37ceb1df]" started-at="2024-06-02T19:06:26 IST" name="reportTeardown" finished-at="2024-06-02T19:06:26 IST" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTeardown -->
-      </class> <!-- tests.Xm3913 -->
-    </test> <!-- BStackDemo 2 -->
-  </suite> <!-- Suite -->
+      </class> <!-- tests.XM4305 -->
+    </test> <!-- A20 -->
+  </suite> <!-- Demo Suite -->
 </testng-results>
