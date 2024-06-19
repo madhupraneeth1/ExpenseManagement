@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ExpenseReport">
+      <class name="tests.XM3913">
         <methods>
-          <include name="reportTeardown"/>
-          <include name="setup"/>
           <include name="teardown"/>
+          <include name="setup"/>
           <include name="reportSetup"/>
+          <include name="reportTeardown"/>
           <include name="dotest"/>
         </methods>
-      </class> <!-- tests.ExpenseReport -->
+      </class> <!-- tests.XM3913 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

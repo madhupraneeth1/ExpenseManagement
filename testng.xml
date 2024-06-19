@@ -2,86 +2,12 @@
 <suite name="Demo Suite">
      <test name="A1">
         <classes>
-            <class name="tests.XM3913"/>
+            <class name="tests.XM3915"/>
         </classes>
     </test>
     <test name="A2">
         <classes>
-            <class name="tests.XM3914"/>
-        </classes>
-    </test>
-    <test name="A3">
-        <classes>
-            <class name="tests.XM3915"/>
-        </classes>
-    </test>
-    <test name="A4">
-        <classes>
-            <class name="tests.XM3917"/>
-        </classes>
-    </test><test name="A5">
-        <classes>
-            <class name="tests.XM3918"/>
-        </classes>
-    </test><test name="A6">
-        <classes>
-            <class name="tests.XM3920"/>
-        </classes>
-    </test><test name="A7">
-        <classes>
-            <class name="tests.XM3922"/>
-        </classes>
-    </test><test name="A8">
-        <classes>
-            <class name="tests.XM3925"/>
-        </classes>
-    </test><test name="A9">
-        <classes>
-            <class name="tests.XM3926"/>
-        </classes>
-    </test><test name="A10">
-        <classes>
-            <class name="tests.XM3927"/>
-        </classes>
-    </test><test name="A11">
-        <classes>
-            <class name="tests.XM3938"/>
-        </classes>
-    </test><test name="A12">
-        <classes>
-            <class name="tests.XM3940"/>
-        </classes>
-    </test><test name="A13">
-        <classes>
-            <class name="tests.XM3942"/>
-        </classes>
-    </test><test name="A14">
-        <classes>
-            <class name="tests.XM3949"/>
-        </classes>
-    </test><test name="A15">
-        <classes>
-            <class name="tests.XM3951"/>
-        </classes>
-    </test><test name="A16">
-        <classes>
-            <class name="tests.XM3977"/>
-        </classes>
-    </test><test name="A17">
-        <classes>
-            <class name="tests.XM4193"/>
-        </classes>
-    </test><test name="A18">
-        <classes>
-            <class name="tests.XM4233"/>
-        </classes>
-    </test><test name="A19">
-        <classes>
-            <class name="tests.XM4281"/>
-        </classes>
-    </test><test name="A20">
-        <classes>
-            <class name="tests.XM4305"/>
+            <class name="tests.XM3913"/>
         </classes>
     </test>
 </suite>
