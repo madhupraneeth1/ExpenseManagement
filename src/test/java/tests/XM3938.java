@@ -1,5 +1,5 @@
 package tests;
-
+import pages.BaseClass;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-
+import pages.BaseClass;
 
 public class XM3938 extends BaseClass {
 	

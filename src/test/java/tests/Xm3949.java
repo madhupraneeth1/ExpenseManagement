@@ -9,7 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
-
+import pages.BaseClass;
 public class XM3949 extends BaseClass {
 	
 	@Test

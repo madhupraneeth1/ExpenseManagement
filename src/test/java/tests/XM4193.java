@@ -1,5 +1,5 @@
 package tests;
-
+import pages.BaseClass;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;

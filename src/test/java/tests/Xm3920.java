@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import io.appium.java_client.AppiumBy;
-
+import pages.BaseClass;
 
 public class XM3920 extends BaseClass {
 	@Test
