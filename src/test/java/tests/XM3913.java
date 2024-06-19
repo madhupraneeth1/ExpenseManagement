@@ -7,16 +7,12 @@ import pages.Loginpage;
 
 public class XM3913 extends BaseClass {
 
-    Loginpage login = new Loginpage();
-
-    @Test
+    @SuppressWarnings("static-access")
+	@Test
     public void dotest() throws InterruptedException {
     	
     	// Login to the XM Application
-        Thread.sleep(3000);
-        login.settings("https://xm10-dde.xm.dev.inforcloudsuite.com", "443", "XMMOBSTND_AX2");
-        Thread.sleep(3000);
-        login.loginwithskip("jsmith", "p");
+        Loginpage.login("https://xm10-dde.xm.dev.inforcloudsuite.com", "443", "XMMOBSTND_AX2", "jsmith", "p");
         
         // Click Add button
         Common.clickAdd();
@@ -25,7 +21,7 @@ public class XM3913 extends BaseClass {
         Common.clickStartReport();
 
         // Enter report title
-        Common.enterReportTitle("T1");
+        Common.enterReportTitle("XM3913");
 
         // Click Purpose field
         Common.clickPurposeField();

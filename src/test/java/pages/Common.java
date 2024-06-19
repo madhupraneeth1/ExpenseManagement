@@ -52,7 +52,7 @@ public class Common extends BaseClass {
     }
 
     public static void selectExpenseType(String type) {
-        scrollAndClickByText(type);
+    	scrollAndClickByExpense(type);
     }
 
     public static void enterAmount(String amountValue) {
@@ -117,7 +117,7 @@ public class Common extends BaseClass {
         element.sendKeys(text);
     }
 
-    private static void scrollAndClickByText(String text) {
+    private static void scrollAndClickByExpense(String text) {
         WebElement element = driver.findElement(new AppiumBy.ByAndroidUIAutomator(
                 "new UiScrollable(new UiSelector().scrollable(true).instance(0))"
                         + ".scrollIntoView(new UiSelector()" + ".textMatches(\"" + text + "\").instance(0))"));
