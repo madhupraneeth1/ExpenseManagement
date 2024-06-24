@@ -96,7 +96,7 @@ public class Common extends BaseClass {
     }
 
     public static void clickconfirm() {
-        clickById("com.infor.hl.xm.dev:id/dialog_button_negativeabcdef");
+        //clickById("com.infor.hl.xm.dev:id/dialog_button_negativeabcdef");
     }
 
 
