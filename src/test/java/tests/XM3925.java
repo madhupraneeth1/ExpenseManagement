@@ -27,7 +27,7 @@ public class XM3925 extends BaseClass {
         Common.clickStartReport();
 
         // Enter report title
-        Common.enterReportTitle("XM3913");
+        Common.enterReportTitle("XM3925");
 
         // Click Purpose field
         Common.clickPurposeField();
