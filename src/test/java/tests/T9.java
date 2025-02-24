@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 
-public class XM4193 extends BaseClass {
+public class T9 extends BaseClass {
 	
 	@Test
 	

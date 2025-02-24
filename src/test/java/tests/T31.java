@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
 
-public class XM3942 extends BaseClass {
+public class T31 extends BaseClass {
 @Test
 
 	

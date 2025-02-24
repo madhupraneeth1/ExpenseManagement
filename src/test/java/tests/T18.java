@@ -12,7 +12,7 @@ import pages.BaseClass;
 import pages.Common;
 import pages.Loginpage;
 
-public class XM3918 extends BaseClass {
+public class T18 extends BaseClass {
 
 
 	

@@ -13,7 +13,7 @@ import pages.BaseClass;
 import pages.Common;
 import pages.Loginpage;
 
-public class XM3920 extends BaseClass {
+public class T20 extends BaseClass {
 	
 	@SuppressWarnings("static-access")
     @Test

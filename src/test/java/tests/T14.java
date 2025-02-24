@@ -5,7 +5,7 @@ import pages.BaseClass;
 import pages.Common;
 import pages.Loginpage;
 
-public class XM3913 extends BaseClass {
+public class T14 extends BaseClass {
 
     @Test
     public void dotest() throws InterruptedException {

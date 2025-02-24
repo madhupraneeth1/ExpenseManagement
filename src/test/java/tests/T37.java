@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
 import pages.BaseClass;
-public class XM3949 extends BaseClass {
+public class T37 extends BaseClass {
 	
 	@Test
 	public void dotest() throws Exception {

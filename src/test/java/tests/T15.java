@@ -14,7 +14,7 @@ import pages.Loginpage;
 
 import java.time.Duration;
 
-public class XM3914 extends BaseClass {
+public class T15 extends BaseClass {
 
 	@SuppressWarnings("static-access")
     @Test

@@ -9,7 +9,7 @@ import pages.Common;
 import pages.Loginpage;
 import io.appium.java_client.AppiumBy;
 
-public class XM3926 extends BaseClass {
+public class T4 extends BaseClass {
 
 	@SuppressWarnings("static-access")
     @Test

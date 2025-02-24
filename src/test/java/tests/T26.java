@@ -13,7 +13,7 @@ import pages.BaseClass;
 import pages.Common;
 import pages.Loginpage;
 
-public class XM3927 extends BaseClass {
+public class T26 extends BaseClass {
 	@SuppressWarnings("static-access")
     @Test
     public void dotest() throws InterruptedException {
