@@ -1,33 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-19T16:59:33 IST" name="Default suite" finished-at="2024-06-19T17:00:40 IST" duration-ms="67364">
+  <suite started-at="2024-07-17T13:41:11 IST" name="Demo Suite" finished-at="2024-07-17T13:43:51 IST" duration-ms="160321">
     <groups>
     </groups>
-    <test started-at="2024-06-19T16:59:33 IST" name="Default test" finished-at="2024-06-19T17:00:40 IST" duration-ms="67364">
-      <class name="tests.XM3913">
-        <test-method is-config="true" signature="reportSetup()[pri:0, instance:tests.XM3913@74235045]" started-at="2024-06-19T16:59:33 IST" name="reportSetup" finished-at="2024-06-19T16:59:33 IST" duration-ms="188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportSetup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3913@74235045]" started-at="2024-06-19T16:59:33 IST" name="setup" finished-at="2024-06-19T16:59:41 IST" duration-ms="7925" status="PASS">
+    <test started-at="2024-07-17T13:41:11 IST" name="A1" finished-at="2024-07-17T13:42:20 IST" duration-ms="69824">
+      <class name="tests.XM3920">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3920@5656be13]" started-at="2024-07-17T13:41:11 IST" name="setup" finished-at="2024-07-17T13:41:21 IST" duration-ms="10832" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dotest()[pri:0, instance:tests.XM3913@74235045]" started-at="2024-06-19T16:59:41 IST" name="dotest" finished-at="2024-06-19T17:00:40 IST" duration-ms="58685" status="PASS">
+        <test-method signature="dotest()[pri:0, instance:tests.XM3920@5656be13]" started-at="2024-07-17T13:41:21 IST" name="dotest" finished-at="2024-07-17T13:42:20 IST" duration-ms="58251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dotest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3913@74235045]" started-at="2024-06-19T17:00:40 IST" name="teardown" finished-at="2024-06-19T17:00:40 IST" duration-ms="726" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3920@5656be13]" started-at="2024-07-17T13:42:20 IST" name="teardown" finished-at="2024-07-17T13:42:20 IST" duration-ms="718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="reportTeardown()[pri:0, instance:tests.XM3913@74235045]" started-at="2024-06-19T17:00:40 IST" name="reportTeardown" finished-at="2024-06-19T17:00:41 IST" duration-ms="235" status="PASS">
+      </class> <!-- tests.XM3920 -->
+    </test> <!-- A1 -->
+    <test started-at="2024-07-17T13:42:20 IST" name="A2" finished-at="2024-07-17T13:42:48 IST" duration-ms="27894">
+      <class name="tests.XM3922">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3922@4c12331b]" started-at="2024-07-17T13:42:20 IST" name="setup" finished-at="2024-07-17T13:42:28 IST" duration-ms="8001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3922@4c12331b]" started-at="2024-07-17T13:42:28 IST" name="dotest" finished-at="2024-07-17T13:42:48 IST" duration-ms="19296" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, findElement {using=id, value=com.infor.hl.xm.dev:id/fab_add}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, findElement {using=id, value=com.infor.hl.xm.dev:id/fab_add}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+at pages.Common.clickById(Common.java:215)
+at pages.Common.clickAdd(Common.java:19)
+at tests.XM3922.dotest(XM3922.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3922@4c12331b]" started-at="2024-07-17T13:42:48 IST" name="teardown" finished-at="2024-07-17T13:42:48 IST" duration-ms="595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3922 -->
+    </test> <!-- A2 -->
+    <test started-at="2024-07-17T13:42:48 IST" name="A3" finished-at="2024-07-17T13:43:21 IST" duration-ms="33070">
+      <class name="tests.XM3915">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3915@815b41f]" started-at="2024-07-17T13:42:48 IST" name="setup" finished-at="2024-07-17T13:42:56 IST" duration-ms="7599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3915@815b41f]" started-at="2024-07-17T13:42:56 IST" name="dotest" finished-at="2024-07-17T13:43:21 IST" duration-ms="24821" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, findElement {using=id, value=com.infor.hl.xm.dev:id/user_profile_img}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, findElement {using=id, value=com.infor.hl.xm.dev:id/user_profile_img}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+at pages.Common.clickById(Common.java:215)
+at pages.Common.clickprofilebtn(Common.java:100)
+at tests.XM3915.dotest(XM3915.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3915@815b41f]" started-at="2024-07-17T13:43:21 IST" name="teardown" finished-at="2024-07-17T13:43:21 IST" duration-ms="643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.XM3915 -->
+    </test> <!-- A3 -->
+    <test started-at="2024-07-17T13:43:21 IST" name="A4" finished-at="2024-07-17T13:43:51 IST" duration-ms="29464">
+      <class name="tests.XM3913">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:tests.XM3913@7e6f74c]" started-at="2024-07-17T13:41:10 IST" name="reportSetup" finished-at="2024-07-17T13:41:11 IST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportSetup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.XM3913@7e6f74c]" started-at="2024-07-17T13:43:21 IST" name="setup" finished-at="2024-07-17T13:43:29 IST" duration-ms="7161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dotest()[pri:0, instance:tests.XM3913@7e6f74c]" started-at="2024-07-17T13:43:29 IST" name="dotest" finished-at="2024-07-17T13:43:50 IST" duration-ms="21551" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, findElement {using=id, value=com.infor.hl.xm.dev:id/fab_add}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, findElement {using=id, value=com.infor.hl.xm.dev:id/fab_add}]
+Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+at pages.Common.clickById(Common.java:215)
+at pages.Common.clickAdd(Common.java:19)
+at tests.XM3913.dotest(XM3913.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dotest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.XM3913@7e6f74c]" started-at="2024-07-17T13:43:50 IST" name="teardown" finished-at="2024-07-17T13:43:51 IST" duration-ms="749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="reportTeardown()[pri:0, instance:tests.XM3913@7e6f74c]" started-at="2024-07-17T13:43:51 IST" name="reportTeardown" finished-at="2024-07-17T13:43:51 IST" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTeardown -->
       </class> <!-- tests.XM3913 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- A4 -->
+  </suite> <!-- Demo Suite -->
 </testng-results>

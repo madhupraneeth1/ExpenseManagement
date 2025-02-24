@@ -13,7 +13,8 @@ import io.appium.java_client.AppiumBy;
 
 public class XM3977 extends BaseClass {
 @Test
-	public void dotest() throws Exception {
+	public void dotest() throws Exception
+{
 		Thread.sleep(3000);
 		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.infor.hl.xm.dev:id/fab_add")));

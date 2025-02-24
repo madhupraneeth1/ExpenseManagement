@@ -10,26 +10,19 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
 import pages.BaseClass;
+import pages.Common;
+import pages.Loginpage;
 
 public class XM3927 extends BaseClass {
-	@Test
-	public void dotest() throws Exception {
-Thread.sleep(3000);
-WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(60));
-wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.infor.hl.xm.dev:id/fab_add")));
-WebElement addexpense = driver.findElement(By.id("com.infor.hl.xm.dev:id/fab_add"));
-addexpense.click();
-Thread.sleep(1000);
-WebElement startexpense = driver.findElement(By.id("com.infor.hl.xm.dev:id/start_expense_button"));
-startexpense.click();
-Thread.sleep(2000);
-WebElement expensetype = driver.findElement(By.xpath("//*[contains(@text, 'Airfare')]"));
-if(expensetype.isDisplayed()){
-	expensetype.click();
-}
-Thread.sleep(2000);
-WebElement amount = driver.findElement(By.id("com.infor.hl.xm.dev:id/amount_field"));
-amount.sendKeys("20");
+	@SuppressWarnings("static-access")
+    @Test
+    public void dotest() throws InterruptedException {
+    	
+
+        Loginpage.login("https://xm10-dde.xm.dev.inforcloudsuite.com", "443", "XMMOBSTND_AX2", "jsmith", "p");
+        Common.clickAdd();
+        Common.clickStartExpense();
+        Common.selectExpenseType("Airfare");
 Thread.sleep(1000);
 WebElement ticketnumber = driver.findElement(By.xpath("//*[contains(@text, 'TICKET NUMBER')]"));
 ticketnumber.click();

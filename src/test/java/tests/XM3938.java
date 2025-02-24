@@ -1,5 +1,8 @@
 package tests;
 import pages.BaseClass;
+import pages.Common;
+import pages.Loginpage;
+
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -14,57 +17,45 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import pages.BaseClass;
 
 public class XM3938 extends BaseClass {
-	
+	@SuppressWarnings("static-access")
 	@Test
-	public void Test() throws InterruptedException {
-		
-		//login();
-		
-		WebElement add = driver.findElement(By.id("com.infor.hl.xm.dev:id/fab_add"));
-		add.click();
-		
-		WebElement startreport = driver.findElement(By.id("com.infor.hl.xm.dev:id/start_report_button"));
-		startreport.click();
-		
-		WebDriverWait wait3 = new WebDriverWait(driver,Duration.ofSeconds(120));
-		wait3.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.infor.hl.xm.dev:id/report_name")));
-		
-		WebElement doucmenttitle = driver.findElement(By.id("com.infor.hl.xm.dev:id/report_name"));
-		doucmenttitle.sendKeys("Test Appium");
-		
-		WebElement purpose = driver.findElement(By.id("com.infor.hl.xm.dev:id/detail"));
-		purpose.click();
-		Thread.sleep(2000);
-		
-		WebElement purposetype = driver.findElement(By.xpath("//*[contains(@text, 'Business Development')]"));
-		if(purposetype.isDisplayed()){
-			purposetype.click();
-		}
-		Thread.sleep(2000);
-		
-		WebElement nextbutton = driver.findElement(By.id("com.infor.hl.xm.dev:id/next_button"));
-		nextbutton.click();
+    public void dotest() throws InterruptedException {
+	
+	// Login to the XM Application
+    Loginpage.login("https://xm10-dde.xm.dev.inforcloudsuite.com", "443", "XMMOBSTND_AX2", "jsmith", "p");
+    
+    // Click Add button
+    Common.clickAdd();
 
-		WebElement skipbutton = driver.findElement(By.id("com.infor.hl.xm.dev:id/next_button"));
-		skipbutton.click();
+    // Click Start Report
+    Common.clickStartReport();
 
-		WebElement addexpense = driver.findElement(By.id("com.infor.hl.xm.dev:id/add_tv"));
-		addexpense.click();
-		
-		WebElement createnew = driver.findElement(By.id("com.infor.hl.xm.dev:id/create_new"));
-		createnew.click();
-		Thread.sleep(2000);
-		
-        WebElement airfareexpense = driver.findElement(By.xpath("//*[contains(@text, 'Airfare')]"));
-		if(airfareexpense.isDisplayed()){
-			airfareexpense.click();
-		}
-		
-		WebDriverWait wait1 = new WebDriverWait(driver,Duration.ofSeconds(120));
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.infor.hl.xm.dev:id/amount_field")));
-		
-		WebElement amount = driver.findElement(By.id("com.infor.hl.xm.dev:id/amount_field"));
-		amount.sendKeys("23");
+    // Enter report title
+    Common.enterReportTitle("XM3913");
+
+    // Click Purpose field
+    Common.clickPurposeField();
+
+    // Select Purpose type
+    Common.selectPurposeType("Business Development");
+
+    // Click Next button
+    Common.clickNextButton();
+
+    // Click Skip button
+    Common.clickNextButton();
+
+    // Click Add Expense button
+    Common.clickExpenseButton();
+
+    // Click Create New button
+    Common.clickCreateNew();
+
+    // Select Expense type
+    Common.selectExpenseType("Cash Advance");
+    
+    // Enter amount
+    Common.enterAmount("23");
 		
 		WebElement ticketnumber = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.TextView[2]"));
 		ticketnumber.click();
@@ -300,7 +291,7 @@ public class XM3938 extends BaseClass {
 		WebElement submit = driver.findElement(By.id("com.infor.hl.xm.dev:id/submit_report"));
 		submit.click();
 		
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.infor.hl.xm.dev:id/dialog_button_neutral")));
+		//wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.infor.hl.xm.dev:id/dialog_button_neutral")));
 		
 		WebElement done = driver.findElement(By.id("com.infor.hl.xm.dev:id/dialog_button_neutral"));
 		done.click();

@@ -45,9 +45,17 @@ public class Loginpage extends BaseClass {
     private static WebElement getLoginButton() {
         return driver.findElement(By.id("com.infor.hl.xm.dev:id/next_button"));
     }
-
+    
     private static WebElement getProductTourSkipButton() {
         return driver.findElement(By.id("com.infor.hl.xm.dev:id/product_tour_skip_button"));
+    }
+    
+    private static WebElement getProductTourTakeButton() {
+        return driver.findElement(By.id("com.infor.hl.xm.dev:id/product_tour_take_button"));
+    }
+    
+    private static WebElement getDoneButton() {
+        return driver.findElement(By.id("com.infor.hl.xm.dev:id/done_button"));
     }
 
     public static void login(String serverAddress, String serverPort, String tenantId, String username, String password) throws InterruptedException {
@@ -60,10 +68,10 @@ public class Loginpage extends BaseClass {
         enterUsername(username);
         enterPassword(password);
         clickLoginButton();
-        clcikSkip();
+        clcikSkiptheTour();
     }
 
-    public static void loginwithoutskip(String serverAddress, String serverPort, String tenantId, String username, String password) throws InterruptedException {
+    public static void loginwithtour(String serverAddress, String serverPort, String tenantId, String username, String password) throws InterruptedException {
     	ClickSettingsButton();
         clickScreenProtectionCheckbox();
         enterServerAddress(serverAddress);
@@ -73,6 +81,21 @@ public class Loginpage extends BaseClass {
         enterUsername(username);
         enterPassword(password);
         clickLoginButton();
+        clcikTaketheTour();
+    }
+    
+    public static void takeProductTour() {      
+        clickNextButton();
+        clickNextButton();
+        clickNextButton();
+        clickDoneButton();
+    }
+    
+    public static void logout() throws InterruptedException {
+    	Common.clickprofilebtn();
+    	Common.clicklogout();
+    	Thread.sleep(2000);
+    	Common.clickconfirm();
     }
 
     private static void clickScreenProtectionCheckbox() {
@@ -103,17 +126,33 @@ public class Loginpage extends BaseClass {
         getLoginButton().click();
     }
     
+    private static void clickDoneButton() {
+    	getDoneButton().click();
+    }
     
-    private static void clcikSkip() {
+    
+    private static void clcikSkiptheTour() {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.infor.hl.xm.dev:id/product_tour_skip_button")));
         getProductTourSkipButton().click();
     }
-
-    private static void ClickSettingsButton() {
+    
+    private static void clcikTaketheTour() {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.infor.hl.xm.dev:id/product_tour_take_button")));
+        getProductTourTakeButton().click();
+    }
+
+    private static void ClickSettingsButton() throws InterruptedException {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.infor.hl.xm.dev:id/tenant_button")));
+        try {
         getSettingsButton().click();
+        }
+        catch (Exception e) {
+        	wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.infor.hl.xm.dev:id/tenant_button")));
+        	getSettingsButton().click();
+        }
     }
     
     private static void enterUsername(String user) {

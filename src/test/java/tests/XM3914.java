@@ -16,6 +16,7 @@ import java.time.Duration;
 
 public class XM3914 extends BaseClass {
 
+	@SuppressWarnings("static-access")
     @Test
     public void dotest() throws Exception {
         // Login
@@ -32,13 +33,13 @@ public class XM3914 extends BaseClass {
         Common.clickNextButton();
         Common.clickExpenseButton();
         Common.clickCreateNew();
-        Common.selectExpenseType("United Airlines");
+        Common.selectVendor("United Airlines");
         Common.clickSave();
 
         // Add Expense 2
         Common.clickAdd();
         Common.clickStartReport();
-        Common.scrollAndClickByExpense("Fax");
+        Common.selectExpenseType("Fax");
         Common.enterAmount("20");
         Common.clickSave();
 
@@ -50,14 +51,6 @@ public class XM3914 extends BaseClass {
         Common.clickprofilebtn();
         Common.clicklogout();
 
-        // Login as another user
-        Loginpage.loginwithoutskip("https://xm10-dde.xm.dev.inforcloudsuite.com", "443", "XMMOBSTND_AX2", "jsmith", "p");
-
-        // Additional actions...
     }
 
-    @AfterTest
-    public void teardown() {
-        driver.quit();
-    }
 }

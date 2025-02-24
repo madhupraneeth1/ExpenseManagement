@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 02 18:38:09 IST 2024</td>
+<td>Started on:</td><td>Wed Jul 17 13:43:21 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>80 seconds (80719 ms)</td>
+<tr><td>Total time:</td><td>29 seconds (29464 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,27 +76,47 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.XM3917.dotest()'><b>dotest</b><br>Test class: tests.XM3917</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+<td title='tests.XM3913.dotest()'><b>dotest</b><br>Test class: tests.XM3913</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
 Driver info: io.appium.java_client.AppiumDriver
+Command: [null, findElement {using=id, value=com.infor.hl.xm.dev:id/fab_add}]
 Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 17f73b2c-8a17-41c4-86e8-453ff9406b29
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at tests.XM3917.dotest(XM3917.java:17)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at pages.Common.clickById(Common.java:215)
+	at pages.Common.clickAdd(Common.java:19)
+	at tests.XM3913.dotest(XM3913.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1152003603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1152003603'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.infor.hl.xm.dev:id/fab_add (tried for 60 second(s) with 500 milliseconds interval)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1625932709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1625932709'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
 Driver info: io.appium.java_client.AppiumDriver
+Command: [null, findElement {using=id, value=com.infor.hl.xm.dev:id/fab_add}]
 Capabilities {appium:appActivity: com.infor.hl.xm.ui.navigati..., appium:appPackage: com.infor.hl.xm.dev, appium:automationName: uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.infor.hl.xm.ui.navigati..., appPackage: com.infor.hl.xm.dev, automationName: uiautomator2, deviceName: Oneplus 7T, platformName: ANDROID, platformVersion: 11, udid: 7fac1e5a}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: HD1901, appium:deviceName: 7fac1e5a, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7fac1e5a, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7fac1e5a, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 17f73b2c-8a17-41c4-86e8-453ff9406b29
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at tests.XM3917.dotest(XM3917.java:17)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at pages.Common.clickById(Common.java:215)
+	at pages.Common.clickAdd(Common.java:19)
+	at tests.XM3913.dotest(XM3913.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -124,8 +144,8 @@ Session ID: 17f73b2c-8a17-41c4-86e8-453ff9406b29
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>63</td>
-<td>tests.XM3917@229f66ed</td></tr>
+<td>21</td>
+<td>tests.XM3913@7e6f74c</td></tr>
 </table><p>
 </body>
 </html>

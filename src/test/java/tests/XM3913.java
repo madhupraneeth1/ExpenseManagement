@@ -7,8 +7,7 @@ import pages.Loginpage;
 
 public class XM3913 extends BaseClass {
 
-    @SuppressWarnings("static-access")
-	@Test
+    @Test
     public void dotest() throws InterruptedException {
     	
     	// Login to the XM Application
