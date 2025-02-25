@@ -16,7 +16,7 @@ public class Common extends BaseClass {
     // Methods
 
     public static void clickAdd() {
-        clickById("com.infor.hl.xm.dev:id/fab_add_desc");
+        clickById("com.infor.hl.xm.dev:id/fab_add");
     }
     
     public static void clickSelectFromList() {
