@@ -14,7 +14,7 @@ import pages.BaseClass;
 import pages.Common;
 import pages.Loginpage;
 
-public class Testcase62 extends BaseClass {
+public class T62 extends BaseClass {
 
     @SuppressWarnings("static-access")
 	@Test
