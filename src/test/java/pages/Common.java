@@ -20,7 +20,7 @@ public class Common extends BaseClass {
     }
     
     public static void clickSelectFromList() {
-    	clickById("com.infor.hl.xm.dev:id/from_list_list");
+    	clickById("com.infor.hl.xm.dev:id/from_list");
     }
     public static void tapToAddExplanation() {
     	clickById("com.infor.hl.xm.dev:id/explanation");
