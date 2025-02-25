@@ -19,6 +19,17 @@ public class Common extends BaseClass {
         clickById("com.infor.hl.xm.dev:id/fab_add");
     }
 
+    public static void clickSelectFromList() {
+    	clickById("com.infor.hl.xm.dev:id/from_list");
+    }
+    public static void tapToAddExplanation() {
+    	clickById("com.infor.hl.xm.dev:id/explanation");
+    }
+    
+    public static void enterExplanation(String explanation) {
+        enterTextById("com.infor.hl.xm.dev:id/explanation", explanation);
+    }
+    
     public static void clickStartReport() {
         clickById("com.infor.hl.xm.dev:id/start_report_button");
     }
@@ -63,9 +74,27 @@ public class Common extends BaseClass {
     	scrollAndClick(type);
     }
     
+    public static void selectandDeselectAllExpenseButton() {
+    	clickById("com.infor.hl.xm.dev:id/select_all");
+    }
+    
+    public static void selectExpense(int index) {     
+    	  String xpath = String.format("//android.widget.ImageView[@resource-id=\"com.infor.hl.xm.dev:id/select_icon\"][%d]", index); 
+    	clickByXpath(xpath); 
+    }
+    
+    public static void openexplanation() {
+    	clickById("com.infor.hl.xm.dev:id/brv_layout");
+    }
+    
     public static void selectVendor(String vendor) {
     	clickByXpath("//android.widget.TextView[@resource-id=\"com.infor.hl.xm.dev:id/title\" and @text=\"Vendor\" or @text=\"VENDOR\"]");
     	scrollAndClick(vendor);
+    }
+    
+    public static void paymentType() {
+    	clickByXpath("//android.widget.TextView[@resource-id=\"com.infor.hl.xm.dev:id/title\" and @text=\"PAYMENT TYPE\"]");
+    	
     }
     
     public static void selectPaymentType(String paymenttype) {
@@ -80,6 +109,10 @@ public class Common extends BaseClass {
         if (searchLocationField.isDisplayed()) {
         	searchLocationField.sendKeys(location);
         }
+    }
+    
+    public static void allowNone() {
+        clickById("com.google.android.providers.media.module:id/button_add");
     }
     
     public static void selectPurpose(String purpose) {
@@ -194,6 +227,28 @@ public class Common extends BaseClass {
         clickById("com.infor.hl.xm.dev:id/dialog_button_negative");
     }
     
+    public static void clickApprovalBtn() {
+    	clickById("com.infor.hl.xm.dev:id/approval_count_txt");
+    }
+    
+    public static void clickERApproval() {
+    	clickById("com.infor.hl.xm.dev:id/start_approval");
+    }
+    public static void clickMoreInfo() {
+    	clickById("com.infor.hl.xm.dev:id/moreInfo");
+    }
+    
+    public static void moreInfoNote() {
+    	clickById("com.infor.hl.xm.dev:id/arrow_view");
+    }
+    
+    public static void enterMoreinfoText(String title) {
+    	enterTextById("com.infor.hl.xm.dev:id/reject_note", title);
+    }
+    public static void clickRequestMoreInfo() {
+    	clickById("com.infor.hl.xm.dev:id/reject_report");
+    }
+    
     public static void clickProfileBtn() {
         clickById("com.infor.hl.xm.dev:id/user_profile_img");
     }
@@ -201,13 +256,13 @@ public class Common extends BaseClass {
     public static void clickLogout() {
         clickById("com.infor.hl.xm.dev:id/pro_log_out_btn");
     }
-
-    public void clickConfirm() {
-        clickById("com.infor.hl.xm.dev:id/dialog_button_negative");
-    }
     
     public static void ExceptionsTab() {
         clickByXpath("//android.widget.LinearLayout[@content-desc=\"Exceptions\"]/android.widget.TextView");
+    }
+    
+    public static void clickOnOk() {
+    	clickById("android:id/button2");
     }
     
     public static void ExpensesTab() {
@@ -261,6 +316,10 @@ public class Common extends BaseClass {
     public static void saveExplanation() {
     	clickById("com.infor.hl.xm.dev:id/done");
     } 
+    
+    public static void selectImage(int numberOfImages) {
+        clickByXpath("(//android.widget.ImageView[@resource-id=\"com.infor.hl.xm.dev:id/select_icon\"])[1]");
+   }
     
     public static void enterVendorviaSearch(String text) throws InterruptedException {
     	clickByXpath("//android.widget.TextView[@resource-id=\"com.infor.hl.xm.dev:id/title\" and @text=\"VENDOR\"]");
