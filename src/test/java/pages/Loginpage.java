@@ -70,6 +70,17 @@ public class Loginpage extends BaseClass {
         clickLoginButton();
         clcikSkiptheTour();
     }
+    
+    public static void loginAgain(String serverAddress, String serverPort, String tenantId, String username, String password) throws InterruptedException {
+    	ClickSettingsButton();
+        enterServerAddress(serverAddress);
+        enterServerPort(serverPort);
+        enterTenantId(tenantId);
+        clickNextButton();
+        enterUsername(username);
+        enterPassword(password);
+        clickLoginButton();
+    }
 
     public static void loginwithtour(String serverAddress, String serverPort, String tenantId, String username, String password) throws InterruptedException {
     	ClickSettingsButton();
@@ -144,15 +155,18 @@ public class Loginpage extends BaseClass {
     }
 
     private static void ClickSettingsButton() throws InterruptedException {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.infor.hl.xm.dev:id/tenant_button")));
-        try {
+ /*       try {
         getSettingsButton().click();
         }
         catch (Exception e) {
         	wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.infor.hl.xm.dev:id/tenant_button")));
         	getSettingsButton().click();
         }
+        */
+        
+        getSettingsButton().click();
     }
     
     private static void enterUsername(String user) {

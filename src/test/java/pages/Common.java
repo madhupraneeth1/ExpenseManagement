@@ -11,19 +11,12 @@ import java.time.Duration;
 
 public class Common extends BaseClass {
 
-    private static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+    public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 
     // Methods
 
     public static void clickAdd() {
         clickById("com.infor.hl.xm.dev:id/fab_add");
-    }
-    
-    public static void clickSelectFromList() {
-    	clickById("com.infor.hl.xm.dev:id/from_list");
-    }
-    public static void tapToAddExplanation() {
-    	clickById("com.infor.hl.xm.dev:id/explanation");
     }
 
     public static void clickStartReport() {
@@ -40,10 +33,6 @@ public class Common extends BaseClass {
     
     public static void enterReportTitle(String title) {
         enterTextById("com.infor.hl.xm.dev:id/report_name", title);
-    }
-    
-    public static void enterExplanation(String explanation) {
-        enterTextById("com.infor.hl.xm.dev:id/explanation", explanation);
     }
 
     public static void clickPurposeField() {
@@ -65,20 +54,6 @@ public class Common extends BaseClass {
     public static void clickExpenseButton() {
         clickById("com.infor.hl.xm.dev:id/add_tv");
     }
-    
-    public static void selectandDeselectAllExpenseButton() {
-    	clickById("com.infor.hl.xm.dev:id/select_all");
-    }
-    
-    public static void selectExpense(int index) {     
-    	  String xpath = String.format("//android.widget.ImageView[@resource-id=\"com.infor.hl.xm.dev:id/select_icon\"][%d]", index); 
-    	clickByXpath(xpath); 
-    	}
-    
-    
-    public static void openexplanation() {
-    	clickById("com.infor.hl.xm.dev:id/brv_layout");
-    }
 
     public static void clickCreateNew() {
         clickById("com.infor.hl.xm.dev:id/create_new");
@@ -93,6 +68,12 @@ public class Common extends BaseClass {
     	scrollAndClick(vendor);
     }
     
+    public static void selectPaymentType(String paymenttype) {
+    	clickByXpath("//android.widget.TextView[@resource-id=\"com.infor.hl.xm.dev:id/title\" and @text=\"PAYMENT TYPE\"]");
+    	WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@text, '" + paymenttype + "')]")));
+        element.click();
+    }
+
     public static void location(String location) {
         clickByXpath("//android.widget.TextView[@resource-id=\"com.infor.hl.xm.dev:id/title\" and @text=\"LOCATION\"]");
         WebElement searchLocationField = driver.findElement(By.id("com.infor.hl.xm.dev:id/search_src_text"));
@@ -101,11 +82,11 @@ public class Common extends BaseClass {
         }
     }
     
-    public static void selectPurpose(String purpose ) {
+    public static void selectPurpose(String purpose) {
     	clickByXpath("//android.widget.TextView[@resource-id=\"com.infor.hl.xm.dev:id/title\" and @text=\"PURPOSE\"]");
     	scrollAndClick(purpose);
     }
-
+    
     public static void enterAmount(String amountValue) {
         enterTextById("com.infor.hl.xm.dev:id/amount_field", amountValue);
     }
@@ -113,7 +94,7 @@ public class Common extends BaseClass {
     public static void clickReceiptClip() {
         clickById("com.infor.hl.xm.dev:id/receipt_clip");
     }
-    
+
     public static void clickChooseFromLibrary() {
         clickById("com.infor.hl.xm.dev:id/library");
     }
@@ -121,13 +102,13 @@ public class Common extends BaseClass {
     public static void clickTakeAPhoto() {
         clickById("com.infor.hl.xm.dev:id/take_photo");
     }
-
+    
     public static void clickReceiptGallery() {
         clickById("com.infor.hl.xm.dev:id/gallery");
     }
 
     public static void selectImage() {
-        clickByXpath("(//android.widget.ImageView[@resource-id=\"com.infor.hl.xm.dev:id/select_icon\"])[1]");
+        clickByXpath("(//android.widget.ImageView[@resource-id=\"com.infor.hl.xm.dev:id/select_icon\"])[3]");
     }
     
     public static void allowTakePictures() {
@@ -139,11 +120,7 @@ public class Common extends BaseClass {
     }
     
     public static void allowAccessPhotos() {
-        clickById("com.android.permissioncontroller:id/permission_allow_selected_button");
-    }
-    
-    public static void allowNone() {
-        clickById("com.google.android.providers.media.module:id/button_add");
+        clickById("com.android.permissioncontroller:id/permission_allow_all_button");
     }
     
     public static void capture() {
@@ -166,32 +143,6 @@ public class Common extends BaseClass {
         clickById("com.infor.hl.xm.dev:id/save_draft_button");
     }
     
-    public static void clickApprovalBtn() {
-    	clickById("com.infor.hl.xm.dev:id/approval_count_txt");
-    }
-    //public static void clickReportsTab() {
-    	//clickById("com.infor.hl.xm.dev:id/reports");
-    //}
-    public static void clickERApproval() {
-    	clickById("com.infor.hl.xm.dev:id/start_approval");
-    }
-    public static void clickMoreInfo() {
-    	clickById("com.infor.hl.xm.dev:id/moreInfo");
-    }
-    public static void enterMoreinfoText(String title) {
-    	enterTextById("com.infor.hl.xm.dev:id/reject_note", title);
-    }
-    public static void clickRequestMoreInfo() {
-    	clickById("com.infor.hl.xm.dev:id/reject_report");
-    }
-    
-    public static void moreInfoNote() {
-    	clickById("com.infor.hl.xm.dev:id/arrow_view");
-    }
-    
-    public static void clickOnOk() {
-    	clickById("android:id/button2");
-    }
     public static void clickBack() {
         clickById("com.infor.hl.xm.dev:id/back");
     }              
@@ -200,21 +151,27 @@ public class Common extends BaseClass {
         clickByXpath("//android.widget.FrameLayout[@content-desc=\"reports\"]/android.widget.FrameLayout/android.widget.ImageView");
     }
     
+    public static void clickReceiptsTab() {
+        clickByXpath("//android.widget.FrameLayout[@content-desc=\"RECEIPTS\"]/android.widget.FrameLayout/android.widget.ImageView");
+    }
+    
+    public static void clickExpensesTab() {
+        clickByXpath("//android.widget.FrameLayout[@content-desc=\"expense\"]/android.widget.FrameLayout/android.widget.ImageView");
+    }
+    
+    public static void clickApprovalsTab() {
+        clickByXpath("//android.widget.FrameLayout[@content-desc=\"approvals\"]/android.widget.FrameLayout/android.widget.ImageView");
+    }
+    
     public static void openReport(String report) {
     	scrollAndClick(report);
     }
     
     public static void openExpense(String expense) {
-    	scrollAndClick(expense);
-    }
-    
-    public static void paymentType() {
-    	clickByXpath("//android.widget.TextView[@resource-id=\"com.infor.hl.xm.dev:id/title\" and @text=\"PAYMENT TYPE\"]");
-    	
-    }
-    
-    public static void selectPaymentType(String paymenttype) {
-    	scrollAndClick(paymenttype);
+    	WebElement element = driver.findElement(new AppiumBy.ByAndroidUIAutomator(
+                "new UiScrollable(new UiSelector().scrollable(true).instance(0))"
+                        + ".scrollIntoView(new UiSelector()" + ".textMatches(\"" + expense + "\").instance(0))"));
+        element.click();
     }
 
     public static void clickSubmitReport() {
@@ -248,7 +205,23 @@ public class Common extends BaseClass {
     public void clickConfirm() {
         clickById("com.infor.hl.xm.dev:id/dialog_button_negative");
     }
-
+    
+    public static void ExceptionsTab() {
+        clickByXpath("//android.widget.LinearLayout[@content-desc=\"Exceptions\"]/android.widget.TextView");
+    }
+    
+    public static void ExpensesTab() {
+        clickByXpath("//android.widget.LinearLayout[@content-desc=\"Expenses\"]/android.widget.TextView");
+    }
+    
+    public static void ReceiptsTab() {
+        clickByXpath("//android.widget.LinearLayout[@content-desc=\"Receipts\"]/android.widget.TextView");
+    }
+    
+    public static void NotesTab() {
+        clickByXpath("//android.widget.LinearLayout[@content-desc=\"Notes\"]/android.widget.TextView");
+    }
+    
     public static void clickProdcuttour() {
         clickByXpath("//android.widget.TextView[@resource-id=\"com.infor.hl.xm.dev:id/title_tv\" and @text=\"Product Tour\"]");
     }
@@ -270,6 +243,24 @@ public class Common extends BaseClass {
     public static void clickCurrencyTitle() {
         clickById("com.infor.hl.xm.dev:id/currency_title");
     }
+    
+    public static void someFieldsNeedReview() {
+    	clickById("com.infor.hl.xm.dev:id/brv_layout");
+    }
+    
+    public static void reportNeedReview() {
+    	clickById("com.infor.hl.xm.dev:id/action_textview");
+    }
+    
+    public static void giveExplanation(String explanation) {
+    	clickById("com.infor.hl.xm.dev:id/explanation");
+    	enterTextById("com.infor.hl.xm.dev:id/explanation", explanation);
+    	clickById("com.infor.hl.xm.dev:id/item_done");
+    }     
+    
+    public static void saveExplanation() {
+    	clickById("com.infor.hl.xm.dev:id/done");
+    } 
     
     public static void enterVendorviaSearch(String text) throws InterruptedException {
     	clickByXpath("//android.widget.TextView[@resource-id=\"com.infor.hl.xm.dev:id/title\" and @text=\"VENDOR\"]");
@@ -339,6 +330,7 @@ public class Common extends BaseClass {
         }
         Thread.sleep(2000);
     }
+
     public static void clickById(String id) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
         element.click();
@@ -354,6 +346,11 @@ public class Common extends BaseClass {
         element.sendKeys(text);
     }
 
+    public static void click(String text) {
+        WebElement element =driver.findElement(By.xpath("//*[contains(@text, '" + text + "')]"));
+        element.click();
+    }
+    
     public static void scrollAndClick(String text) {
         WebElement element = driver.findElement(new AppiumBy.ByAndroidUIAutomator(
                 "new UiScrollable(new UiSelector().scrollable(true).instance(0))"
