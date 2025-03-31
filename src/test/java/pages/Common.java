@@ -391,21 +391,25 @@ public class Common extends BaseClass {
     }
 
     public static void clickById(String id) {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
         element.click();
     }
 
     public static void clickByXpath(String xpath) {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
         element.click();
     }
 
     public static void enterTextById(String id, String text) {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
         element.sendKeys(text);
     }
 
-    public static void click(String text) {
+    public static void click(String text) throws InterruptedException {
+    	Thread.sleep(2000);
         WebElement element =driver.findElement(By.xpath("//*[contains(@text, '" + text + "')]"));
         element.click();
     }

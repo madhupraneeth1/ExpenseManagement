@@ -2,22 +2,10 @@
 <suite name="Demo Suite">
      <test name="A1">
         <classes>
-            <class name="tests.XM3920"/>
-        </classes>
-    </test>
-    <test name="A2">
-        <classes>
-            <class name="tests.XM3922"/>
-        </classes>
-    </test>
-    <test name="A3">
-        <classes>
-            <class name="tests.XM3915"/>
-        </classes>
-    </test>
-    <test name="A4">
-        <classes>
-            <class name="tests.XM3913"/>
+            <class name="tests.T04"/>
+            <class name="tests.T14"/>
+            <class name="tests.T16"/>
+            <class name="tests.T26"/>
         </classes>
     </test>
 </suite>

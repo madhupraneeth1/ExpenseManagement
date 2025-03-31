@@ -2,7 +2,9 @@ package pages;
  
 import java.net.URL;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import io.appium.java_client.AppiumDriver;
 
@@ -11,7 +13,7 @@ public class BaseClass extends ExtentReportsXM {
 	
 	protected static AppiumDriver driver;
 	
-	@BeforeTest
+	@BeforeClass
 	public void setup() {
 		try {
 		
@@ -37,7 +39,7 @@ public class BaseClass extends ExtentReportsXM {
  
 	}
 	
-	@AfterTest
+	@AfterClass
 	public void teardown() {
 		driver.quit();	
 		
