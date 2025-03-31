@@ -97,9 +97,4 @@ public class T17 extends BaseClass {
         Thread.sleep(2000); // Adjust sleep time as needed
         Common.clickconfirm();
     }
-
-    @AfterTest
-    public void teardown() {
-        driver.quit();
-    }
 }
