@@ -279,8 +279,6 @@ public class Common extends BaseClass {
         	searchVendorField.sendKeys(text);  
         }
         Thread.sleep(2000);
-        
-
         WebElement zeroResult = driver.findElement(By.xpath("//*[contains(@text, '0 Result')]"));
         if (zeroResult.isDisplayed()) {
             WebElement createNewVendorIcon = driver.findElement(By.id("com.infor.hl.xm.dev:id/arrow"));
@@ -292,11 +290,9 @@ public class Common extends BaseClass {
             }
         }
         Thread.sleep(2000);
-
         WebElement addVendorField = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.EditText"));
         String vendorValue = addVendorField.getText();
         Thread.sleep(3000);
-
         Common.clickSave();
         Thread.sleep(3000);
 
@@ -316,25 +312,25 @@ public class Common extends BaseClass {
     	clickByXpath("//android.widget.TextView[@resource-id=\"com.infor.hl.xm.dev:id/title\" and @text=\"VENDOR\" or @text=\"Vendor\"]");
     	WebElement createNewVendorIcon = driver.findElement(By.id("com.infor.hl.xm.dev:id/arrow"));
         createNewVendorIcon.click();
-        Thread.sleep(3000);
-
+        Thread.sleep(2000);
         WebElement addVendorField2 = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.EditText"));
         addVendorField2.click();
         addVendorField2.sendKeys(text);
+        Thread.sleep(2000);
         WebElement addVendorField = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.EditText"));
         String vendorValue = addVendorField.getText();
         vendorValue = addVendorField2.getText();
-        Thread.sleep(3000);
-
+        Thread.sleep(2000);
         Common.clickSave();
-        Thread.sleep(3000);
-
+        Thread.sleep(2000);
         // Verify vendor value again
         driver.findElement(new AppiumBy.ByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))"
                 + ".scrollIntoView(new UiSelector()" + ".textMatches(\"" + "VENDOR" + "\").instance(0))"));
+        Thread.sleep(2000);
         WebElement vendorValueElement2 = driver.findElement(By.xpath("//*[contains(@text, '" + vendorValue + "') ]"));
         if (vendorValueElement2.isDisplayed()) {
             System.out.println("Value in vendor field: " + vendorValue);
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
             WebElement vendorIcon = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[5]/android.widget.ImageView[1]"));
             vendorIcon.click();
         }
@@ -360,7 +356,6 @@ public class Common extends BaseClass {
     }
 
     public static void click(String text) throws InterruptedException {
-    	Thread.sleep(1000);
         WebElement element =driver.findElement(By.xpath("//*[contains(@text, '" + text + "')]"));
         element.click();
     }
