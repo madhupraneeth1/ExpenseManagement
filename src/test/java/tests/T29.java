@@ -137,13 +137,5 @@ Thread.sleep(2000);
 WebElement confirm =driver.findElement(By.id("com.infor.hl.xm.dev:id/dialog_button_negative"));
 confirm.click();
 }
-	@AfterTest
-	public void teardown() {
-driver.quit();
-
-	}
-		
-	
-
 }
 
