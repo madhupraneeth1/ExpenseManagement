@@ -66,9 +66,4 @@ public class T18 extends BaseClass {
         Thread.sleep(2000);
         Common.clickconfirm();
     }
-
-    @AfterTest
-    public void teardown() {
-        driver.quit();
-    }
 }
