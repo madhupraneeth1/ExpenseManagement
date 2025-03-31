@@ -74,14 +74,6 @@ public class T26 extends BaseClass {
         Loginpage.logout();
 
 }
-	@AfterTest
-	public void teardown() {
-driver.quit();
-
-	}
-		
-	
-
 }
 
 
