@@ -75,9 +75,4 @@ public class T31 extends BaseClass {
 		WebElement confirm =driver.findElement(By.id("com.infor.hl.xm.dev:id/dialog_button_negative"));
 		confirm.click();
 		}
-			@AfterTest
-			public void teardown() {
-		driver.quit();
-
-}
 }
