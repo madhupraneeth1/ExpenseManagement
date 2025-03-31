@@ -20,11 +20,11 @@ public class T04 extends BaseClass {
         // Click Add button
         Common.clickAdd();
 
-        // Click Start Report
+/*        // Click Start Report
         Common.clickStartReport();
 
         // Enter report title
-        Common.enterReportTitle("XM3913");
+        Common.enterReportTitle("T04");
 
         // Click Purpose field
         Common.clickPurposeField();
@@ -43,7 +43,8 @@ public class T04 extends BaseClass {
 
         // Click Create New button
         Common.clickCreateNew();
-
+*/
+        Common.clickStartExpense();
         // Select Expense type
         Common.selectExpenseType("Taxi/Car Service");
 
@@ -54,79 +55,71 @@ public class T04 extends BaseClass {
 
         driver.findElement(new AppiumBy.ByAndroidUIAutomator(
                 "new UiScrollable(new UiSelector().scrollable(true).instance(0))"
-                        + ".scrollIntoView(new UiSelector().textMatches(\"NOTE\").instance(0))"));
+                        + ".scrollIntoView(new UiSelector().textMatches(\"Notes\").instance(0))"));
         WebElement notes = driver.findElement(By.xpath(
                 "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[11]/android.widget.TextView[2]"));
-        String value = notes.getText();
-        System.out.println("Note is : " + value);
+        System.out.println("Note is : " + notes.getText());
         Thread.sleep(2000);
-        notes.click();
-
-        WebElement addNotes = driver.findElement(By.id("com.infor.hl.xm.dev:id/note"));
-        addNotes.click();
-        addNotes.sendKeys("Taxi/Car Service");
-
-        Thread.sleep(2000);
-
-        WebElement back = driver.findElement(By.id("com.infor.hl.xm.dev:id/back"));
-        back.click();
-        Thread.sleep(3000);
-
+       
+        Common.enterNote("Taxi/Car Service");
+        
         driver.findElement(new AppiumBy.ByAndroidUIAutomator(
                 "new UiScrollable(new UiSelector().scrollable(true).instance(0))"
-                        + ".scrollIntoView(new UiSelector().textMatches(\"NOTE\").instance(0))"));
+                        + ".scrollIntoView(new UiSelector().textMatches(\"Notes\").instance(0))"));
         WebElement notes2 = driver.findElement(By.xpath(
                 "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[11]/android.widget.TextView[2]"));
-        value = notes2.getText();
-        System.out.println("Note is : " + value);
-        System.out.println("Note is still " + value);
-        Thread.sleep(2000);
-        notes2.click();
-
-        WebElement addNotes2 = driver.findElement(By.id("com.infor.hl.xm.dev:id/note"));
-        addNotes2.click();
-        addNotes2.sendKeys("Taxi/Car Service");
-
-        Thread.sleep(2000);
-
-        WebElement saveNotes = driver.findElement(By.id("com.infor.hl.xm.dev:id/save"));
-        saveNotes.click();
-        Thread.sleep(3000);
+        System.out.println("Note is updated with: " + notes2.getText());
+        Thread.sleep(1000);
+        
+        Common.enterNote("Taxi/Car");
 
         driver.findElement(new AppiumBy.ByAndroidUIAutomator(
                 "new UiScrollable(new UiSelector().scrollable(true).instance(0))"
-                        + ".scrollIntoView(new UiSelector().textMatches(\"NOTE\").instance(0))"));
+                        + ".scrollIntoView(new UiSelector().textMatches(\"Notes\").instance(0))"));
         WebElement notes3 = driver.findElement(By.xpath(
                 "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[11]/android.widget.TextView[2]"));
-        value = notes3.getText();
-        System.out.println("Note is : " + value);
-        System.out.println("Note is edited with " + value);
+        System.out.println("Note is edited with :" + notes3.getText());
         Thread.sleep(2000);
-
-        WebElement addNotes3 = driver.findElement(By.id("com.infor.hl.xm.dev:id/note"));
-        addNotes3.click();
-        addNotes3.sendKeys("'*%_{}$&?!@'");
-
-        Thread.sleep(2000);
-
-        WebElement saveNotes2 = driver.findElement(By.id("com.infor.hl.xm.dev:id/save"));
-        saveNotes2.click();
+        
+        Common.enterNote("'*%_{}$&?^#()|:;<>!@'");
+        
+        driver.findElement(new AppiumBy.ByAndroidUIAutomator(
+                "new UiScrollable(new UiSelector().scrollable(true).instance(0))"
+                        + ".scrollIntoView(new UiSelector().textMatches(\"Notes\").instance(0))"));
+        WebElement notes4 = driver.findElement(By.xpath(
+                "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[11]/android.widget.TextView[2]"));
+        System.out.println("Note is accepting special characters like :" + notes4.getText());
         Thread.sleep(3000);
+        
+        Common.clickSave();
+//        Common.clickSaveER();
+        Thread.sleep(1000);
+        
+//        Common.clickBack();
+//        Thread.sleep(1000);
+        
+//        Common.openReport("T04");
+        Common.openExpense("Taxi/Car Service");
+        Thread.sleep(2000);
+        Common.enterAmount("22");
 
         driver.findElement(new AppiumBy.ByAndroidUIAutomator(
                 "new UiScrollable(new UiSelector().scrollable(true).instance(0))"
-                        + ".scrollIntoView(new UiSelector().textMatches(\"NOTE\").instance(0))"));
-        WebElement notes4 = driver.findElement(By.xpath(
-                "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[11]/android.widget.TextView[2]"));
-        value = notes4.getText();
-        System.out.println("Note is : " + value);
-        System.out.println("Note is accepting special characters like " + value);
-        Thread.sleep(3000);
-
-        WebElement saveExpense = driver.findElement(By.id("com.infor.hl.xm.dev:id/save"));
-        saveExpense.click();
-        Thread.sleep(3000);
-
+                        + ".scrollIntoView(new UiSelector().textMatches(\"Notes\").instance(0))"));
+        WebElement notes5 = driver.findElement(By.xpath(
+        		"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[9]/android.widget.TextView[2]"));
+        notes5.click();
+        
+        WebElement notes6 = driver.findElement(By.id("com.infor.hl.xm.dev:id/note"));
+        notes6.click();
+        notes6.clear();
+        
+        Common.clickSave();
+        Common.clickSave();
+//        Common.clickSaveER();
+//        Thread.sleep(1000);
+        
+//        Common.clickBack();
         Loginpage.logout();
     }
 }

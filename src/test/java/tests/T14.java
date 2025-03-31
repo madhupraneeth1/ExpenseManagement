@@ -55,13 +55,6 @@ public class T14 extends BaseClass {
         // Click Done button in dialog
         Common.clickDone();
         
-        // Click profile button
-        Common.clickprofilebtn();
-        
-        // Click logout
-        Common.clicklogout();
-        
-        // Click confirm
-        Common.clickconfirm();
+       Loginpage.logout();
     }
 }
